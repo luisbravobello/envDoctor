@@ -1,0 +1,38 @@
+name: Historia de usuario
+description: Una funcionalidad del backlog
+title: "[HU] "
+labels: ["historia"]
+body:
+  - type: textarea
+    id: historia
+    attributes:
+      label: Historia
+      description: Como <rol>, quiero <acción>, para <beneficio>.
+    validations:
+      required: true
+  - type: textarea
+    id: criterios
+    attributes:
+      label: Criterios de aceptación
+      placeholder: |
+        - [ ] Dado ..., cuando ..., entonces ...
+    validations:
+      required: true
+  - type: dropdown
+    id: modulo
+    attributes:
+      label: Módulo
+      options:
+        - Proyectos y análisis
+        - Agente local (CLI)
+        - Escaneo del proyecto
+        - Motor de diagnóstico
+        - Informe de salud
+        - Asistente IA
+        - Historial
+        - DevOps / CI-CD
+        - Documentación
+  - type: input
+    id: puntos
+    attributes:
+      label: Puntos de historia

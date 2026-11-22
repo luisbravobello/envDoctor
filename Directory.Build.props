@@ -1,0 +1,12 @@
+<Project>
+  <!-- Configuración común para todos los proyectos .NET de la solución. -->
+  <PropertyGroup>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AnalysisLevel>latest-recommended</AnalysisLevel>
+    <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+    <Authors>Equipo EnvDoctor</Authors>
+    <Product>EnvDoctor</Product>
+  </PropertyGroup>
+</Project>

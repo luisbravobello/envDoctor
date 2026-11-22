@@ -1,0 +1,15 @@
+name: Tarea técnica
+description: Trabajo de infraestructura, refactor o documentación
+title: "[Tarea] "
+labels: ["tarea"]
+body:
+  - type: textarea
+    id: descripcion
+    attributes:
+      label: Descripción
+    validations:
+      required: true
+  - type: textarea
+    id: hecho
+    attributes:
+      label: Definición de hecho

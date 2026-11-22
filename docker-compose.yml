@@ -1,0 +1,63 @@
+name: envdoctor
+
+services:
+  frontend:
+    build:
+      context: ./frontend
+    ports:
+      - "${FRONTEND_PORT:-3000}:80"
+    depends_on:
+      - api
+    networks: [envdoctor]
+
+  api:
+    build:
+      context: .
+      dockerfile: src/EnvDoctor.Api/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ConnectionStrings__EnvDoctor: "Host=db;Port=5432;Database=${POSTGRES_DB:-envdoctor};Username=${POSTGRES_USER:-envdoctor};Password=${POSTGRES_PASSWORD:-envdoctor}"
+      Ollama__Endpoint: "http://ollama:11434"
+      Ollama__Model: "${OLLAMA_MODEL:-qwen2.5:3b}"
+      Features__VectorSearch: "${FEATURES__VECTORSEARCH:-false}"
+    ports:
+      - "${API_PORT:-8080}:8080"
+    depends_on:
+      db:
+        condition: service_healthy
+      ollama:
+        condition: service_started
+    networks: [envdoctor]
+
+  db:
+    # Imagen de PostgreSQL con pgvector incluido (la extensión se activa solo si se usa).
+    image: pgvector/pgvector:pg16
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-envdoctor}
+      POSTGRES_USER: ${POSTGRES_USER:-envdoctor}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-envdoctor}
+    ports:
+      - "${POSTGRES_PORT:-5432}:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-envdoctor} -d ${POSTGRES_DB:-envdoctor}"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+    networks: [envdoctor]
+
+  ollama:
+    image: ollama/ollama:latest
+    ports:
+      - "${OLLAMA_PORT:-11434}:11434"
+    volumes:
+      - ollama:/root/.ollama
+    networks: [envdoctor]
+
+volumes:
+  pgdata:
+  ollama:
+
+networks:
+  envdoctor:

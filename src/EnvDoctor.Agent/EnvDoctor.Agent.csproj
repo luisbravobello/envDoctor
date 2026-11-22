@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <PackAsTool>true</PackAsTool>
+    <ToolCommandName>envdoctor</ToolCommandName>
+    <PackageId>EnvDoctor.Agent</PackageId>
+    <Description>Agente local de solo lectura de EnvDoctor.</Description>
+  </PropertyGroup>
+
+</Project>
