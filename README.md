@@ -8,7 +8,8 @@
 con reglas verificables y un asistente de IA que siempre cita la evidencia.**
 
 [![CI](https://img.shields.io/github/actions/workflow/status/luisbravobello/envDoctor/ci.yml?branch=main&style=for-the-badge&logo=githubactions&logoColor=white&label=CI)](https://github.com/luisbravobello/envDoctor/actions/workflows/ci.yml)
-![Sprint](https://img.shields.io/badge/Sprint-0_Fundaci%C3%B3n-F59E0B?style=for-the-badge)
+![Fase](https://img.shields.io/badge/Fase-0_%C2%B7_Fundaci%C3%B3n-F59E0B?style=for-the-badge)
+![Producción](https://img.shields.io/badge/Producci%C3%B3n-En_proceso-EF4444?style=for-the-badge)
 ![Versión](https://img.shields.io/badge/Versi%C3%B3n-0.1.0-22C55E?style=for-the-badge)
 ![Asignatura](https://img.shields.io/badge/SCM_I-Proyecto_integral-8B5CF6?style=for-the-badge)
 
@@ -30,11 +31,38 @@ con reglas verificables y un asistente de IA que siempre cita la evidencia.**
 
 ---
 
+## Estado del proyecto
+
+<div align="center">
+
+![Fase actual](https://img.shields.io/badge/Fase_actual-0_%C2%B7_Fundaci%C3%B3n-F59E0B?style=for-the-badge&labelColor=0F172A)
+![Producción](https://img.shields.io/badge/Producci%C3%B3n-En_proceso-EF4444?style=for-the-badge&labelColor=0F172A)
+![Entorno](https://img.shields.io/badge/Entorno-Desarrollo-0EA5E9?style=for-the-badge&labelColor=0F172A)
+
+| Indicador | Progreso |
+|:--|:--|
+| **Fase 0 · Fundación** | ![](https://img.shields.io/badge/%E2%96%88%E2%96%88%E2%96%88%E2%96%88%E2%96%88%E2%96%88%E2%96%91%E2%96%91%E2%96%91%E2%96%91-60%25-F59E0B?style=for-the-badge&labelColor=0F172A) |
+| **Desarrollo total (fases 0 a 5)** | ![](https://img.shields.io/badge/%E2%96%88%E2%96%91%E2%96%91%E2%96%91%E2%96%91%E2%96%91%E2%96%91%E2%96%91%E2%96%91%E2%96%91-10%25-0EA5E9?style=for-the-badge&labelColor=0F172A) |
+| **Camino a producción (v1.0.0)** | ![](https://img.shields.io/badge/%E2%96%91%E2%96%91%E2%96%91%E2%96%91%E2%96%91%E2%96%91%E2%96%91%E2%96%91%E2%96%91%E2%96%91-0%25-EF4444?style=for-the-badge&labelColor=0F172A) |
+
+</div>
+
+| Fase 0: entregable | Estado |
+|:--|:--:|
+| Repositorio con ramas `main` y `develop` | ![](https://img.shields.io/badge/Listo-22C55E?style=flat-square) |
+| Esqueleto de backend (.NET) y frontend (React) | ![](https://img.shields.io/badge/Listo-22C55E?style=flat-square) |
+| Docker Compose básico | ![](https://img.shields.io/badge/Listo-22C55E?style=flat-square) |
+| CI mínimo en GitHub Actions | ![](https://img.shields.io/badge/Listo-22C55E?style=flat-square) |
+| Protección de ramas | ![](https://img.shields.io/badge/En_proceso-F59E0B?style=flat-square) |
+| PRD y backlog inicial | ![](https://img.shields.io/badge/Pendiente-94A3B8?style=flat-square) |
+| ADR-001 a ADR-004 | ![](https://img.shields.io/badge/Pendiente-94A3B8?style=flat-square) |
+
 > [!NOTE]
-> **Estado: Sprint 0 (Fundación).** El repositorio contiene la estructura base, sin lógica de negocio. Proyecto integral de **Software Configuration Management I**, opción 1 (Full Stack + IA + DevOps).
+> El repositorio contiene la estructura base, sin lógica de negocio. Proyecto integral de **Software Configuration Management I**, opción 1 (Full Stack + IA + DevOps).
 
 ## Tabla de contenidos
 
+- [Estado del proyecto](#estado-del-proyecto)
 - [Qué es EnvDoctor](#qué-es-envdoctor)
 - [Características](#características)
 - [Stack tecnológico](#stack-tecnológico)
@@ -42,7 +70,7 @@ con reglas verificables y un asistente de IA que siempre cita la evidencia.**
 - [Estructura del repositorio](#estructura-del-repositorio)
 - [Inicio rápido](#inicio-rápido)
 - [Flujo de trabajo](#flujo-de-trabajo)
-- [Plan por sprints](#plan-por-sprints)
+- [Plan por fases](#plan-por-fases)
 - [Documentación](#documentación)
 - [Equipo](#equipo)
 
@@ -224,9 +252,9 @@ gitGraph
 
 **Convenciones:** [Conventional Commits](https://www.conventionalcommits.org/es/) (`feat:`, `fix:`, `docs:`), versiones [SemVer](https://semver.org/lang/es/) con tags `vX.Y.Z`. Detalles en [CONTRIBUTING.md](CONTRIBUTING.md).
 
-## Plan por sprints
+## Plan por fases
 
-| Sprint | Meta | Estado |
+| Fase | Meta | Estado |
 |:--:|:--|:--:|
 | 0 | Fundación: repo, ramas, esqueleto, Compose y CI mínimo | ![](https://img.shields.io/badge/En_curso-F59E0B?style=flat-square) |
 | 1 | Escaneo básico de proyectos .NET | ![](https://img.shields.io/badge/Pendiente-94A3B8?style=flat-square) |
