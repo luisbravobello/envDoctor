@@ -41,7 +41,7 @@ con reglas verificables y un asistente de IA que siempre cita la evidencia.**
 
 | Indicador | Progreso |
 |:--|:--|
-| **Fase 0 · Fundación** | ![](https://img.shields.io/badge/%E2%96%88%E2%96%88%E2%96%88%E2%96%88%E2%96%88%E2%96%88%E2%96%91%E2%96%91%E2%96%91%E2%96%91-60%25-F59E0B?style=for-the-badge&labelColor=0F172A) |
+| **Fase 0 · Fundación** | ![](https://img.shields.io/badge/%E2%96%88%E2%96%88%E2%96%88%E2%96%88%E2%96%88%E2%96%88%E2%96%88%E2%96%88%E2%96%88%E2%96%91-90%25-F59E0B?style=for-the-badge&labelColor=0F172A) |
 | **Desarrollo total (fases 0 a 5)** | ![](https://img.shields.io/badge/%E2%96%88%E2%96%91%E2%96%91%E2%96%91%E2%96%91%E2%96%91%E2%96%91%E2%96%91%E2%96%91%E2%96%91-10%25-0EA5E9?style=for-the-badge&labelColor=0F172A) |
 | **Camino a producción (v1.0.0)** | ![](https://img.shields.io/badge/%E2%96%91%E2%96%91%E2%96%91%E2%96%91%E2%96%91%E2%96%91%E2%96%91%E2%96%91%E2%96%91%E2%96%91-0%25-EF4444?style=for-the-badge&labelColor=0F172A) |
 
@@ -53,9 +53,10 @@ con reglas verificables y un asistente de IA que siempre cita la evidencia.**
 | Esqueleto de backend (.NET) y frontend (React) | ![](https://img.shields.io/badge/Listo-22C55E?style=flat-square) |
 | Docker Compose básico | ![](https://img.shields.io/badge/Listo-22C55E?style=flat-square) |
 | CI mínimo en GitHub Actions | ![](https://img.shields.io/badge/Listo-22C55E?style=flat-square) |
-| Protección de ramas | ![](https://img.shields.io/badge/En_proceso-F59E0B?style=flat-square) |
-| PRD y backlog inicial | ![](https://img.shields.io/badge/Pendiente-94A3B8?style=flat-square) |
-| ADR-001 a ADR-004 | ![](https://img.shields.io/badge/Pendiente-94A3B8?style=flat-square) |
+| Protección de ramas | ![](https://img.shields.io/badge/Listo-22C55E?style=flat-square) |
+| PRD | ![](https://img.shields.io/badge/En_revisi%C3%B3n-0EA5E9?style=flat-square) |
+| Backlog inicial en GitHub Issues | ![](https://img.shields.io/badge/Pendiente-94A3B8?style=flat-square) |
+| ADR-001 a ADR-005 | ![](https://img.shields.io/badge/En_revisi%C3%B3n-0EA5E9?style=flat-square) |
 
 > [!NOTE]
 > El repositorio contiene la estructura base, sin lógica de negocio. Proyecto integral de **Software Configuration Management I**, opción 1 (Full Stack + IA + DevOps).
